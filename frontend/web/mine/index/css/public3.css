@@ -1,0 +1,22 @@
+body{
+    background: #fff;
+    height: 100%;
+}
+.item-nav{
+    margin-bottom: 0;
+}
+.item-nav li{
+    padding:0 15px 0 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 77px;
+    color: #4d4852;
+    margin-bottom: 0;
+}
+.padding{
+    padding: 0 4px;
+}
+footer .right-part{
+    border-top: none;;
+    border-top: 2px solid #eb3e37;
+}

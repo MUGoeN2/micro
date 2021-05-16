@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
+
+ .left-part,.right-part{
+    position: relative;
+    float: left;
+ }
+ .left-part{
+    width: 70%;
+}
+ .right-part{
+     width: 30%;
+}
+ .color-red{
+     color:#eb3e37;
+ }
+
+
+
+
+
