@@ -18,9 +18,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="<?php echo Yii::$app->request->baseUrl.'/js/jquery.min.js' ?>"></script>
-    <!--    <script src="--><?php //echo Yii::$app->request->baseUrl.'/mine/index/js/index.js' ?><!--"></script>-->
-    <!--    <link href="--><?php //echo Yii::$app->request->baseUrl.'/mine/index/css/index.css' ?><!--" rel="stylesheet">-->
-    <?= Html::csrfMetaTags() ?>
+      <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <link rel="Shortcut Icon" href="<?php echo Yii::$app->request->baseUrl.'/favicon.ico'?>">
 

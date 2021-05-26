@@ -20,8 +20,11 @@ return [
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
-                // your rules go here
+//                "<controller:\w+>/<action:\w+>/<id:\d+>"=>"<controller>/<action>",
+//                "<controller:\w+>/<action:\w+>"=>"<controller>/<action>"
             ],
         ],
         'user' => [
