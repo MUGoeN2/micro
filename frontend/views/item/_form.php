@@ -61,8 +61,8 @@ use yii\widgets\ActiveForm;
                 <div class="col-md-12">
                     <p class="text-center title" style="padding:15px;margin: 0">上传图片</p>
                     <p class="well">项目板块图片尺寸要求：<br>
-                        1、图片最佳尺寸 250*250px<br>
-                        2、单张最大1M
+                        1、图片最佳尺寸 450*450px<br>
+                        2、单张最大2M
                     </p>
                     <div class="pic-box text-center pic-main-box">
                         <?php if(!empty($model->pic)){ ?>
