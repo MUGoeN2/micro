@@ -52,8 +52,7 @@ use yii\widgets\ActiveForm;
                     'prompt'=>'请选择',
         ]
     ) ?>
-    <?php// p($model);?>
-    <?php// p($model);?>
+   
     <div class="row">
         <div class="col-md-10">
             <label class="control-label" for="item-pic">图片</label>
