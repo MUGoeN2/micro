@@ -19,7 +19,7 @@ class ItemSearch extends Item
     {
         return [
             [['id', 'weight', 'cate', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['item_id', 'title', 'pic', 'pic_src', 'desc', 'cate'], 'safe'],
+            [['item_id', 'title', 'pic', 'pic_src', 'desc','detail', 'cate'], 'safe'],
         ];
     }
 
@@ -68,7 +68,8 @@ class ItemSearch extends Item
             ->andFilterWhere(['like', 'pic', $this->pic])
             ->andFilterWhere(['like', 'cate', $this->cate])
             ->andFilterWhere(['like', 'pic_src', $this->pic_src])
-            ->andFilterWhere(['like', 'desc', $this->desc]);
+            ->andFilterWhere(['like', 'desc', $this->desc])
+            ->andFilterWhere(['like', 'detail', $this->detail]);
 
         return $dataProvider;
     }

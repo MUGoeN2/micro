@@ -52,7 +52,7 @@ use yii\widgets\ActiveForm;
                     'prompt'=>'请选择',
         ]
     ) ?>
-   
+
     <div class="row">
         <div class="col-md-10">
             <label class="control-label" for="item-pic">图片</label>
@@ -116,7 +116,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'pic_src')->textInput(['maxlength' => true,'class'=>'hidden']) ?>
 
-    <?= $form->field($model, 'desc')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'desc')->textarea(['rows' => 2,'maxlength' => 25]) ?>
+    <?= $form->field($model, 'detail')->textarea(['rows' => 8]) ?>
 
 
     <div class="form-group">

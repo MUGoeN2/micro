@@ -14,6 +14,7 @@ use Yii;
  * @property string $pic
  * @property string $pic_src
  * @property string $desc
+ * @property string $detail
  * @property integer $weight
  * @property integer $status
  * @property string $created_at
@@ -36,7 +37,7 @@ class Item extends \yii\db\ActiveRecord
     {
         return [
             [['item_id', 'title', 'cate'], 'required'],
-            [['desc'], 'string'],
+            [['desc','detail'], 'string'],
             [['weight', 'status', 'created_at', 'updated_at'], 'integer'],
             [['item_id',  'cate','title'], 'string', 'max' => 64],
             [['pic', 'pic_src'], 'string', 'max' => 128]
@@ -55,7 +56,8 @@ class Item extends \yii\db\ActiveRecord
             'cate' => '类型',
             'pic' => 'Pic',
             'pic_src' => 'Pic Src',
-            'desc' => 'Desc',
+            'desc' => '简介',
+            'detail' => '详细介绍',
             'weight' => 'Weight',
             'status' => 'Status',
             'created_at' => 'Created At',
