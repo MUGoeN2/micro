@@ -45,7 +45,7 @@ AppAsset::register($this);
 <div class="wrap" style="color: #fff">
     <?php
     $image=Yii::$app->request->baseUrl.'/img/logo.png';
-    NavBar::begin(['brandLabel' => '品牌名',  'brandUrl' => "#"]);
+    NavBar::begin(['brandLabel' => '怀瑜科技有限公司',  'brandUrl' => "#"]);
     $cates=\common\models\Cate::find()->where(['status'=>1])->orderBy('weight DESC')->asArray()->limit(3)->all();
     $n=0;
     $cate_arr=[];

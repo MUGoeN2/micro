@@ -117,6 +117,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'pic_src')->textInput(['maxlength' => true,'class'=>'hidden']) ?>
 
     <?= $form->field($model, 'desc')->textarea(['rows' => 2,'maxlength' => 25]) ?>
+
     <?= $form->field($model, 'detail')->textarea(['rows' => 8]) ?>
 
 
